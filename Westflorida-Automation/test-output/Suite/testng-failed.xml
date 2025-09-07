@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.ServicesPageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="testServicesSequentiallyInSameTab"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- tests.ServicesPageTest -->
+      <class name="tests.ContactUsPageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="verifyContactUsPage"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- tests.ContactUsPageTest -->
+      <class name="tests.ProgramsPageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="testProgramsSequentiallyInSameTab"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- tests.ProgramsPageTest -->
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="verifyHomePageSections"/>
+          <include name="verifySearchFunctionality"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+      <class name="tests.MyAccountPageTest">
+        <methods>
+          <include name="verifyForgotPassword"/>
+          <include name="beforeTest"/>
+          <include name="verifyRegistration"/>
+          <include name="afterTest"/>
+          <include name="verifyLogin"/>
+        </methods>
+      </class> <!-- tests.MyAccountPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
